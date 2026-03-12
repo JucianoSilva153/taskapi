@@ -3,12 +3,12 @@ import { IsNumber, IsNotEmpty, IsString, MinLength, IsEmpty, IsBoolean } from "c
 export class UpdateTaskDto{
     @IsNumber()
     @IsNotEmpty()
-    id: number
+    id!: string
 
     @IsString()
     @IsNotEmpty()
     @MinLength(3)
-    title: string
+    title!: string
 
     @IsString()
     @IsEmpty()
